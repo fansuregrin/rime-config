@@ -8,9 +8,9 @@ patch:
     - name: ascii_mode
       reset: 0
       states: [ 中文, 西文 ]
-    - name: emoji_suggestion
-      reset: 1
-      states: [ "🈚️️\uFE0E", "🈶️️\uFE0F" ] 
+   # - name: emoji_suggestion
+   #   reset: 1
+   #   states: [ "🈚️️\uFE0E", "🈶️️\uFE0F" ] 
     - name: full_shape
       states: [ 半角, 全角 ]
     - name: simplification
@@ -27,7 +27,7 @@ patch:
     - reverse_lookup_translator
     #- table_translator@custom_phrase
   engine/filters:
-    - simplifier@emoji_suggestion
+    #- simplifier@emoji_suggestion
     - simplifier
     - uniquifier
     #- charset_filter@gbk
